@@ -155,10 +155,9 @@ window.confirm = CustomConfirm;
 
   function getTemplate( css, icon ) {
 
-    if( !css ) css = "../assets/style.css";
     if( !icon ) icon = require("../assets/icons/question-circle.svg").default;
 
-    require( css );
+    require( "../assets/style.css" );
 
     if ( !template ) {
       template = document.createElement('DIV');
