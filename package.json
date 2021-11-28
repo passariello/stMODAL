@@ -1,0 +1,51 @@
+{
+  "name": "stmodal",
+  "version": "0.0.1",
+  "description": "Custom alert, confirm and popup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "deprecated": false,
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/passariello/stMODAL",
+    "help": "https://github.com/passariello/stMODAL#readme"
+  },
+  "bugs": {
+    "url": "https://github.com/passariello/stMODAL/issues"
+  },
+  "homepage": "https://github.com/passariello/stMODAL",
+  "keywords": [
+    "alert",
+    "window",
+    "confirm",
+    "popup",
+    "easy",
+    "pro",
+    "powerful",
+    "passariello"
+  ],
+  "author": {
+    "name": "Dario Passariello",
+    "website": "https://dario.passariello.ca",
+    "email": "dariopassariello@gmail.com"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jshint": "^2.13.1"
+  },
+  "contributors": [
+    {
+      "name": "Dario Passariello",
+      "email": "dariopassariello@gmail.com"
+    },
+    {
+      "name": "Valeria Cala Scaglitta",
+      "email": "valeriacalascaglitta@gmail.com"
+    }
+  ]
+}

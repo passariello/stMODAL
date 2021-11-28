@@ -1,0 +1,132 @@
+#modalBase{
+  position:absolute;
+  top:-9999;
+  left:-999;
+  z-index:9999;
+}
+
+.modal {
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.3);
+  font-size:1.1em;
+}
+
+.modal_content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background:rgba( var(--color_1),1 );
+  border-radius:8px;
+  box-shadow:0 35px 15px -15px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.2);
+  overflow:hidden;
+  padding:2px;
+  z-index:1002;
+}
+
+.modal_header {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+}
+
+.modal_header img{
+  position:absolute;
+  top:14px;
+  left:12px;
+  width:24px;
+  height:24px;
+  opacity:.5
+}
+
+.modal_title {
+  position:absolute;
+  top:5px;
+  left:5px;
+  right:5px;
+  height:44px;
+  max-height:44px;
+  border-bottom:1px solid rgba(0,0,0,.15);
+  padding:10px 8px 0 45px;
+  font-weight: 700;
+  overflow:hidden
+}
+
+.modal_body {
+  position:absolute;
+  top:50px;
+  bottom:60px;
+  left:0;
+  right:0;
+  padding:15px;
+  text-align: center;
+  font-size:1.2em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.modal_btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  width:30px;
+  height:30px;
+  border:none;
+  border-radius:3px;
+  color:white;
+  background-color: rgb( var( --input-button) );
+  cursor:pointer;
+}
+
+.modal_btn-close:hover {
+  opacity: 0.4;
+}
+
+.modal_btn-close:before {
+  content: 'X';
+}
+
+.modal_footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  height:50px;
+}
+
+.modal_btn-yes,
+.modal_btn-no {
+  margin:2px;
+  padding:10px 20px;
+  border:none;
+  border-radius:3px;
+  color:white;
+  background-color: rgb( var( --input-button) );
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+.modal_btn-yes:focus,
+.modal_btn-no:focus{
+  box-shadow: 0, 0, 3px orange;
+}
+
+.modal_btn-yes:hover,
+.modal_btn-no:hover {
+  background-color: var( --orange )
+}
+
+
