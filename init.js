@@ -18,7 +18,7 @@
   require('./scripts/popup.js');
 
   // FIRST MESSAGE
-  console.groupCollapsed( '%cstMODAL General%c',"color:orange","" );
+  console.groupCollapsed( `%cstMODAL v${pjson.version}%c`,"color:orange","" );
     console.debug( `%cstMODAL v${pjson.version}%c by Dario Passariello started`,"color:orange","" );
     console.debug( "%cFor help visit: " + pjson.repository.help, "color:gray","" );
     console.debug( 'name: %c' + pjson.name,"color:orange","" );
