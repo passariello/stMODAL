@@ -108,7 +108,7 @@ window.confirm = CustomConfirm;
   Dialog.prototype.show = function () {
     if (showing) return;
     showing = true;
-    document.getElementById('root').appendChild( this.modal );
+    document.querySelector('body').appendChild( this.modal );
   };
 
   Dialog.prototype.hide = function () {
@@ -160,7 +160,7 @@ window.confirm = CustomConfirm;
         template.innerHTML = `
                             <div class="modal_content">
                               <div class="modal_header">
-                                <img src="/SPA/assets/icons/question-circle.svg"/>
+                                <img src="/assets/icons/question-circle.svg"/>
                                 <div class="modal_title"></div>
                                 <button class="modal_btn-close"></button>
                               </div>
