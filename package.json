@@ -1,6 +1,6 @@
 {
   "name": "stmodal",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Custom alert, confirm and popup",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,6 @@
     "url": "https://github.com/passariello/stMODAL",
     "help": "https://github.com/passariello/stMODAL#readme"
   },
-  "files": [
-    "assets/*.css",
-    "assets/icons/*.svg"
-  ],
   "bugs": {
     "url": "https://github.com/passariello/stMODAL/issues"
   },
