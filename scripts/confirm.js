@@ -13,6 +13,7 @@ window.confirm = CustomConfirm;
   let showing = false;
 
   function CustomConfirm ( text , config, callback ) {
+
     if ( !arguments.length ) return;
 
     if ( typeof config === 'function') {
@@ -25,14 +26,14 @@ window.confirm = CustomConfirm;
       let limit = config.targets.length;
 
       if (limit > 0) {
-        let dialog = new Dialog(config, callback);
+        let dialog = new Dialog ( config, callback );
 
         for ( let i = 0; i < limit; i++ ) {
-          setupEvents(config.targets[i], dialog);
+          setupEvents ( config.targets[i], dialog );
         }
       }
     } else {
-      let dialog = new Dialog (config, callback);
+      let dialog = new Dialog ( config, callback );
       dialog.show();
     }
   }
@@ -40,13 +41,13 @@ window.confirm = CustomConfirm;
   function Dialog ( settings, callback ) {
 
     let _this = this;
-    let modal = getTemplate();
+    let modal = getTemplate( settings.css , settings.icon );
 
     let content = modal.querySelector('.modal_content');
     let title = modal.querySelector('.modal_title');
-    let close = modal.querySelector('.modal_btn-close');
-    let yes = modal.querySelector('.modal_btn-yes');
-    let no = modal.querySelector('.modal_btn-no');
+    let close = modal.querySelector('.modal_btn_close');
+    let yes = modal.querySelector('.modal_btn_yes');
+    let no = modal.querySelector('.modal_btn_no');
     let body = modal.querySelector('.modal_body');
     let overlay = modal.querySelector('.overlay');
 
@@ -101,7 +102,7 @@ window.confirm = CustomConfirm;
     _this.modal = modal;
   }
 
-  Dialog.prototype.setContext = function (context) {
+  Dialog.prototype.setContext = function ( context ) {
     this.context = context;
   };
 
@@ -152,33 +153,36 @@ window.confirm = CustomConfirm;
     }, false);
   }
 
-  function getTemplate() {
+  function getTemplate( css, icon ) {
 
-    require("../assets/style.css");
+    if( !css ) css = "../assets/style.css";
+    if( !icon ) icon = require("../assets/icons/question-circle.svg").default;
+
+    require( css );
 
     if ( !template ) {
-        template = document.createElement('DIV');
-        template.className = 'modal';
-        template.innerHTML = '';
-        template.innerHTML = `
-                            <div class="modal_content">
-                              <div class="modal_header">
-                                <img src="/assets/icons/question-circle.svg"/>
-                                <div class="modal_title"></div>
-                                <button class="modal_btn-close"></button>
-                              </div>
-                              <div class="modal_body"></div>
-                              <div class="modal_footer">
-                                <button class="modal_btn-yes" autofocus></button>
-                                <button class="modal_btn-no"></button>
-                              </div>
-                            </div>`;
+      template = document.createElement('DIV');
+      template.className = 'modal';
+      template.innerHTML = '';
+      template.innerHTML = `
+                          <div class="modal_content">
+                            <div class="modal_header">
+                              <img src="${icon}"/>
+                              <div class="modal_title"></div>
+                              <button class="modal_btn_close"></button>
+                            </div>
+                            <div class="modal_body"></div>
+                            <div class="modal_footer">
+                              <button class="modal_btn_yes" autofocus></button>
+                              <button class="modal_btn_no"></button>
+                            </div>
+                          </div>`;
     }
 
     return template.cloneNode (true);
   }
 
-  function $warn() {
+  function warning() {
     if ( typeof window.console === 'object' && typeof console.warn === 'function' ) {
       console.warn.apply (console, arguments);
     }

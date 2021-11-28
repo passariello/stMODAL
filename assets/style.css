@@ -24,6 +24,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
+  color:#333;
   background-color:white;
   border-radius:8px;
   box-shadow:0 35px 15px -15px rgba(0,0,0,.2), 0 0 15px rgba(0,0,0,.2);
@@ -76,7 +77,7 @@
   flex-wrap: wrap;
 }
 
-.modal_btn-close {
+.modal_btn_close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -90,11 +91,11 @@
   cursor:pointer;
 }
 
-.modal_btn-close:hover {
+.modal_btn_close:hover {
   opacity: 0.4;
 }
 
-.modal_btn-close:before {
+.modal_btn_close:before {
   content: 'X';
 }
 
@@ -107,8 +108,8 @@
   height:50px;
 }
 
-.modal_btn-yes,
-.modal_btn-no {
+.modal_btn_yes,
+.modal_btn_no {
   margin:2px;
   padding:10px 20px;
   border:none;
@@ -119,13 +120,13 @@
   cursor:pointer;
 }
 
-.modal_btn-yes:focus,
-.modal_btn-no:focus{
+.modal_btn_yes:focus,
+.modal_btn_no:focus{
   box-shadow: 0, 0, 3px orange;
 }
 
-.modal_btn-yes:hover,
-.modal_btn-no:hover {
+.modal_btn_yes:hover,
+.modal_btn_no:hover {
   background-color: orange
 }
 

@@ -7,10 +7,10 @@
 
 /***********************************************************************/
 
-// window.popup = CustomPopup
+window.popup = CustomPopup;
 
-  // function CustomPopup ( text , config, callback ) {
+  function CustomPopup ( text , config, callback ) {
 
-  //   console.log("not implemented")
+    console.warn("not implemented");
 
-  // }
+  }

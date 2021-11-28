@@ -13,9 +13,9 @@
   const pjson = require('./package.json');
 
   // SCRIPTS
-  require('./scripts/alert');
-  require('./scripts/confirm');
-  require('./scripts/popup');
+  require('./scripts/alert.js');
+  require('./scripts/confirm.js');
+  require('./scripts/popup.js');
 
   // FIRST MESSAGE
   console.groupCollapsed( '%cstMODAL General%c',"color:orange","" );
