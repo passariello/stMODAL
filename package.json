@@ -1,6 +1,6 @@
 {
   "name": "stmodal",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "Custom alert, confirm and popup",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,6 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "babel-preset-es2015": "^6.24.1",
     "jshint": "^2.13.1"
   },
   "contributors": [
@@ -50,9 +49,7 @@
     }
   ],
   "devDependencies": {
-    "css-loader": "^6.5.1",
     "install": "^0.13.0",
-    "npm": "^8.1.4",
-    "style-loader": "^3.3.1"
+    "npm": "^8.1.4"
   }
 }

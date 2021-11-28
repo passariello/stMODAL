@@ -129,6 +129,9 @@ function setupEvents (el, dialog) {
 }
 
 function getTemplate() {
+
+  require("../assets/style.css");
+
   if ( !template ) {
       template = document.createElement('DIV');
       template.className = 'modal';

@@ -153,6 +153,9 @@ window.confirm = CustomConfirm;
   }
 
   function getTemplate() {
+
+    require("../assets/style.css");
+
     if ( !template ) {
         template = document.createElement('DIV');
         template.className = 'modal';

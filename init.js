@@ -9,8 +9,6 @@
 
 (function () {
 
-  require("./assets/style.css");
-
   // LOAD PACKAGE INFO
   const pjson = require('./package.json');
 
