@@ -9,7 +9,7 @@
 
 (function () {
 
-  // LOAD PACKAGE INFO
+  require('dphelper');
   const pjson = require('./package.json');
 
   // FIRST MESSAGE
