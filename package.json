@@ -1,6 +1,6 @@
 {
   "name": "stmodal",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Custom alert, confirm and popup",
   "main": "index.js",
   "scripts": {
@@ -38,6 +38,7 @@
   "dependencies": {
     "css": "^3.0.0",
     "css-loader": "^6.5.1",
+    "dphelper": "0.0.4",
     "jshint": "^2.13.1",
     "request": "^2.88.2"
   },
