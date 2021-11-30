@@ -7,7 +7,6 @@
 
 
 ```js
-// example:
 import "stmodel"
 ```
 
