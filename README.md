@@ -3,7 +3,7 @@
  Custom alert, confirm and popup
 
  1) use "npm i stmodal" in your project.
- 2) import "stmodal" at top og your index.
+ 2) import "stmodal" at top of your index.
 
 ## alert
 
