@@ -5,6 +5,12 @@
  1) use "npm i stmodal" in your project.
  2) import "stmodal" at top of your index.
 
+
+```js
+// example:
+import "stmodel"
+```
+
 ## alert
 
  when you use "alert('hello world')" you can see the result.
