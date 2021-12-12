@@ -8,6 +8,10 @@
 /***********************************************************************/
 
 (function () {
+  
+  if (typeof window === 'undefined') {
+    global.window = {};
+  }
 
   require('dphelper');
   const pjson = require('./package.json');
