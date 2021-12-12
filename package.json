@@ -1,6 +1,6 @@
 {
   "name": "stmodal",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Custom alert, confirm and popup",
   "main": "index.js",
   "scripts": {
@@ -37,9 +37,10 @@
   "license": "Apache-2.0",
   "dependencies": {
     "css": "^3.0.0",
-    "css-loader": "^6.5.1",
     "dphelper": "0.0.4",
-    "jshint": "^2.13.1"
+    "file-loader": "^6.2.0",
+    "jshint": "^2.13.1",
+    "url-loader": "^4.1.1"
   },
   "contributors": [
     {
