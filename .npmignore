@@ -1,3 +1,5 @@
 test/
 tmp/
-.OLD/
+*.OLD/
+*.bak
+*.lnk
