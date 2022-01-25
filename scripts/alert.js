@@ -132,7 +132,7 @@ window.alert = CustomAlert;
 
   function getTemplate( css, icon ) {
 
-    if( !icon ) icon = require("../assets/icons/question-circle.svg").default;
+    //if( !icon ) icon = require("../assets/icons/question-circle.svg").default;
 
     require( "../assets/style.css" );
 

@@ -1,6 +1,6 @@
 {
   "name": "stmodal",
-  "version": "0.1.82",
+  "version": "0.1.84",
   "description": "Custom alert, confirm and popup",
   "main": "index.js",
   "scripts": {
@@ -55,6 +55,9 @@
     "css-loader": "^6.5.1",
     "install": "^0.13.0",
     "npm": "^8.1.4",
-    "style-loader": "^3.3.1"
+    "style-loader": "^3.3.1",
+    "babel-loader": "^8.2.3",
+    "file-loader": "^6.2.0",
+    "node-loader": "^2.0.0"
   }
 }
