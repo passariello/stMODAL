@@ -4,7 +4,8 @@
   "description": "Custom alert, confirm and popup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "updateAll": "npm version patch --force -m \"New patch commit\" && git push && git push --tags && npm publish"
+
   },
   "deprecated": false,
   "engines": {
